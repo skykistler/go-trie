@@ -21,8 +21,8 @@ myTrie.Insert("My phrase.")
 Insert words or phrases as a string.
 
 ```go
-myTrie.Contains("my phrase")
-myTrie.Contains("My phrase.")
+myTrie.Contains("my phrase") // false
+myTrie.Contains("My phrase.") // true
 ```
 `Contains` will return true only if there's an exact match.
 
