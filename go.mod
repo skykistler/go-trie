@@ -1,3 +1,3 @@
-module github.com/skykistler/go-trie/v0.1.1
+module github.com/skykistler/go-trie
 
 go 1.19
