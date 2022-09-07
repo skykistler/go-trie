@@ -2,14 +2,14 @@ package trie
 
 // Trie represents a node (or root node) of a prefix trie
 type Trie struct {
-	children map[string]Trie
+	children map[uint8]Trie
 	terminal bool
 }
 
 // NewTrie will return a new root node Trie
 func NewTrie() Trie {
 	return Trie{
-		children: make(map[string]Trie),
+		children: make(map[uint8]Trie),
 		terminal: false,
 	}
 }
@@ -20,7 +20,7 @@ func (t *Trie) Insert(value string) bool {
 		return t.setTerminal()
 	}
 
-	first := string(value[0])
+	first := value[0]
 
 	child, contains := t.children[first]
 	if !contains {
@@ -43,7 +43,7 @@ func (t *Trie) Contains(value string) bool {
 		return t.terminal
 	}
 
-	key := string(value[0])
+	key := value[0]
 
 	if child, contains := t.children[key]; !contains {
 		return false

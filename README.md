@@ -4,6 +4,7 @@
 [![GoDoc](https://img.shields.io/static/v1?label=godoc&message=reference&color=blue)](https://pkg.go.dev/github.com/skykistler/go-trie)
 [![tests](https://github.com/skykistler/go-trie/actions/workflows/tests.yml/badge.svg)](https://github.com/skykistler/go-trie/actions/workflows/tests.yml)
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/skykistler/go-trie)
+![GitHub Repo stars](https://img.shields.io/github/stars/skykistler/go-trie?style=social)
 
 go-trie is a simple prefix trie implementation that supports any UTF-8 phrase insertions and lookups.
 
